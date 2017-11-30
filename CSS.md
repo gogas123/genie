@@ -142,3 +142,16 @@ larger div</div>
 ~~~
 ##### 위와 같이 브라우져크기가 sm 인 경우에만 clearfix를 설정한 <div>가 보이도록 하고 있다. 이렇게 되면 아래와 같이 작은 브라우져 화면인 경우에 위와는 다르게 어긋나지 않고 윗줄이 동일하게 맞추어졌음을 확인할 수 있다.
 ![gridsystem](img/grid_system_003.png)
+### [4.2.3.](#TOC) <a id="4.2.3.">그리드 시스템 응용(- offset)</a>
+##### 칼럼의 왼쪽에 공백을 두고 싶다면 그냥 빈 공백의 `<div>`를 공백을 두고 싶은 만큼 col-xs-*등을 넣어도 되지만, 이러한 공백의 `<div>`가 아니라 스타일을 적용함으로써 공백을 둘수도 있다. 이를 위해서 col-sm-offset-1 등과 같이 offset 클래스를 이용하면 된다. 아래는 1개의 칼럼만큼 공백을 두고 5칼럼 크기 만큼을 할당하는 예이다.
+~~~
+<div class="container jumbotron"> 
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">.col-sm-5 .col-sm-offset-1</div> 
+    <div class="col-sm-5 col-sm-offset-1">.col-sm-5 .col-sm-offset-1</div> 
+  </div> 
+</div>
+~~~
+#####  위는 1칼럼 offset, 5칼럼 내용, 1칼럼 offset, 5칼럼 내용을 넣는 소스이며, 실제로 표시해보면 아래와 같이 작은 화면 이상에서는 그렇게 나타나고 작은 화면에서는 세로로 배치되는 것을 확인할 수 있다.
+
+
