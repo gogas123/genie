@@ -74,6 +74,8 @@
 
 ### [4.2.](#TOC) <a id="4.2.">그리드 시스템 응용</a>
 ##### 위의 row와 col-*은 기본적으로 그리드 시스템에서 사용하면서 발생하는 다양한 추가적인 이슈나 문제들에 대해서 추가적인 기능들을 제공해주고 있습니다. 가장 대표적인 상황이 큰 화면에서는 보여주지만, 작은 화면에서 보여주고 싶지 않은 내용일 것이다. 예를 들어 큰 화면에서는 큰 그림을 보여주지만, 작은 화면에서는 보여주고 싶지 않을 때 이러한 기능을 이용하면 된다. 
+
+### [4.2.1.](#TOC) <a id="4.2.1.">그리드 시스템 응용(- visble-*)</a>
 > ###### 아래의 예는 큰 화면에서는 4개의 칼럼으로 보여주다가, 작은 화면에서는 3개의 칼럼만 보여주고자하는 예의 소스이다. 이 경우에는 visible-md 등과 같이 해당 칼럼을 보여주고자 하는 크기를 지정해주면 된다.
 ~~~
  <div class="container jumbotron">
@@ -89,3 +91,54 @@
 ![gridsystem](img/grid_system_000.png)
 ##### 그리고 브라우져의 크기를 줄여보면 아래와 같이 visible-md의 클래스를 설정하였던 칼럼은 없어지고, 나머지 3개의 칼럼만 보여주는 것을 확인할 수 있다. 이 때에 3개의 칼럼을 화면 전체 넓이에 맞게 보여주기 위하여 col-sm-4로 작은 화면에서는 3칼럼으로 보여주도록 함께 설정하였다.
 ![gridsystem](img/grid_system_001.png)
+
+
+### [4.2.2.](#TOC) <a id="4.2.2.">그리드 시스템 응용(- clearfix)</a>
+##### 반응형으로 넓은 화면에서는 여러 개의 칼럼을 하나의 줄로 보여주다가 좁은 화면에서 여러 줄로 나누어서 보여주게 되는 경우 세로 길이가 다르면 약간 어긋나는 상황이 많이 있을 것이다. 대표적인 예가, 큰 화면에서 4칼럼으로 한줄로 보여주다가 작은 화면에서 2칼럼으로 2줄로 보여주는 상황일 것이다. 아래가 그 예이다. 아래는 예 소스이다.
+
+~~~
+        <div class="container jumbotron">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">.col-md-3
+.col-sm-6
+larger div</div>
+                <div class="col-md-3 col-sm-6">.col-md-3
+.col-sm-6</div>
+                <div class="col-md-3 col-sm-6">.col-md-3 .col-sm-6</div>
+                <div class="col-md-3 col-sm-6">.col-md-3 .col-sm-6</div>
+            </div>
+        </div>
+~~~
+##### 결과값 : 
+![gridsystem](img/grid_system_001.png)
+~~~
+.clearfix:before, 
+.clearfix:after,
+ /* 생략 */ {
+    display: table;
+    content: " "; 
+} 
+ .clearfix:after,
+ /* 생략 */ {
+    clear: both; 
+}
+~~~
+##### 위와 같이 CSS를 설정하게 되면, CSS의 흐름이 초기화 되도록 하는 방법이다. 이렇게 clearfix를 이용해서 위의 어긋난 칼럼들을 보정하려면 아래와 같이 sm인 경우에 보이도록 하면 된다. 
+##### 이를 보정한 예는 아래와 같다.
+~~~
+        <div class="container jumbotron">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">.col-md-3
+.col-sm-6
+larger div</div>
+                <div class="col-md-3 col-sm-6">.col-md-3
+.col-sm-6</div>
+                <div class="clearfix visible-sm-block"></div>
+
+                <div class="col-md-3 col-sm-6">.col-md-3 .col-sm-6</div>
+                <div class="col-md-3 col-sm-6">.col-md-3 .col-sm-6</div>
+            </div>
+        </div>
+~~~
+##### 위와 같이 브라우져크기가 sm 인 경우에만 clearfix를 설정한 <div>가 보이도록 하고 있다. 이렇게 되면 아래와 같이 작은 브라우져 화면인 경우에 위와는 다르게 어긋나지 않고 윗줄이 동일하게 맞추어졌음을 확인할 수 있다.
+![gridsystem](img/grid_system_003.png)
