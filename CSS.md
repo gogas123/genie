@@ -124,7 +124,7 @@ larger div</div>
 }
 ~~~
 ##### 위와 같이 CSS를 설정하게 되면, CSS의 흐름이 초기화 되도록 하는 방법이다. 이렇게 clearfix를 이용해서 위의 어긋난 칼럼들을 보정하려면 아래와 같이 sm인 경우에 보이도록 하면 된다. 
-##### 이를 보정한 예는 아래와 같다.
+###### 이를 보정한 예는 아래와 같다.
 ~~~
         <div class="container jumbotron">
             <div class="row">
@@ -154,4 +154,14 @@ larger div</div>
 ~~~
 #####  위는 1칼럼 offset, 5칼럼 내용, 1칼럼 offset, 5칼럼 내용을 넣는 소스이며, 실제로 표시해보면 아래와 같이 작은 화면 이상에서는 그렇게 나타나고 작은 화면에서는 세로로 배치되는 것을 확인할 수 있다.
 
-
+### [4.2.4.](#TOC) <a id="4.2.4.">그리드 시스템 응용(pull, push)</a>
+##### 화면의 크기에 따라서 순서를 바꿔주고 싶다면 pull과 push 클래스를 이용하면 된다. 위의 offset과는 유사하지만, 용도와 내부적인 CSS는 조금 다르다. 
+###### 아래는 화면이 md 크기 이상일 때와 sm이하인 경우에 칼럼의 순서를 바꿔주고자 하는 경우의 예이다.
+~~~
+ <div class="container jumbotron">
+  <div class="row"> 
+    <div class="col-sm-9 col-md-push-3">.col-sm-9 .col-md-push-3</div> 
+    <div class="col-sm-3 col-md-pull-9">.col-sm-3 .col-md-pull-9</div> 
+  </div> 
+ </div>
+~~~
