@@ -172,34 +172,76 @@ larger div</div>
 ##### 위의 소스를 보면 sm 화면 이상에서의 9칼럼 크기 칼럼을 md 이상 화면에서는 push-3을 하고 있고, sm 화면 이상에서 3 칼럼 크기의 카럼을 md 이상 화면에서 pull-9를 설정하였다. pull 클래스는 왼쪽으로 칼럼을 당긴다고 생각하면 되고, push는 칼럼을 오른쪽으로 미는 기능이라고 생각하면 된다. 이에 대하여 실제로 col-sm-9가 앞에 있지만, 중간 화면에서는 아래와 같이 col-sm-3 칼럼이 앞에 있는 것을 확인할 수 있다.
 ![gridsystem](img/grid_system_004.png)
 
+### [5.](#TOC)<a id="5.">Font</a>
+##### 모든 HTML 제목인, `<h1>` 부터 `<h6>` 까지 사용가능합니다. 당신의 텍스트를 인라인으로 표시되면서 스타일만 제목 스타일로 맞추기 위해 `.h1` 부터 `.h6` 클래스 또한 사용 가능합니다.
 
+![gridsystem](img/font_000.png)
 
+~~~
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
+~~~
+![gridsystem](img/font_001.png)
+~~~
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+~~~
+### [5.1.](#TOC) <a id="5.1.">부트스트랩의 Font-size기본값</a>
+##### 부트스트랩의 font-size 기본값은 14px 이고, line-height 는 1.428 입니다. 이것은 <body> 와 모든 단락에 적용됩니다. 추가로, `<p>` (단락) 은 행높이의 절반의 하단 마진을 가집니다.(기본값에 의하면 10px 로 계산됩니다).
 
+### [5.2.](#TOC) <a id="5.2.">Less 로 만들어진</a>
+##### 문자크기는 variables.less 에서의 두 LESS 변수(@font-size-base 와 @line-height-base) 에 기반됩니다. 첫번째 변수는 기본 폰트 크기이고 두번째 변수는 기본 행 높이입니다. 타이포그래피에서 마진, 패딩, 행 높이를 구하기 위해 두 변수와 몇 개의 간단한 수학을 사용합니다.
 
+### [5.3.](#TOC) <a id="5.3.">인라인 텍스트 요소</a>
+#### [5.3.1.](#TOC) <a id="5.3.1.">표시된 텍스트</a>
+##### 또다른 맥락에서 관련있는 텍스트들을 찾아내어 강조하기 위해, `<mark>` 태그를 사용하세요. 
+![gridsystem](img/font_002.png)
+~~~
+당신은 <mark>강조할</mark> 텍스트에 mark 태그를 사용할 수 있습니다.
+~~~
+#### [5.3.2.](#TOC) <a id="5.3.2.">삭제된 텍스트</a>
+텍스트 블록이 삭제 되었음을 나타내기 위해서는 `<del>` 태그를 사용하세요
+![gridsystem](img/font_003.png)
+~~~
+<del>이 텍스트줄은 삭제된 텍스트로 다뤄짐을 의미합니다.</del>
+~~~
+#### [5.3.3.](#TOC) <a id="5.3.3.">취소선 텍스트</a>
+텍스트 블록이 더 이상상 연관이 없음을 나타내기 위해서 `<s>` 태그를 사용하세요.
+![gridsystem](img/font_004.png)
+~~~
+<s>이 텍스트줄은 더 이상 정확하지 않다고 다뤄짐을 의미합니다.</s>
+~~~
+#### [5.3.4.](#TOC) <a id="5.3.4.">삽입된 텍스트</a>
+문서에 추가됨을 나타내기 위해서 `<ins>` 태그를 사용하세요.
+![gridsystem](img/font_005.png)
+~~~
+<ins>이 텍스트줄은 문서에 추가분으로 다뤄짐을 의미합니다.</ins>
+~~~
+#### [5.3.5.](#TOC) <a id="5.3.5.">밑줄친 텍스트</a>
+텍스트에 밑출을 치려면 `<u>` 태그를 사용하세요.
+![gridsystem](img/font_006.png)
+~~~
+<u>이 텍스트줄은 밑줄이 그어질것입니다</u>
+~~~
+#### [5.3.6.](#TOC) <a id="5.3.6.">작은 텍스트</a>
+텍스트 인라인이나 블록을 덜 강조하기 위해, 부모 태그보다 85% 의 크기로 보여지게 하는 `<small>` 태그를 사용하세요. 제목 요소는 내포된 `<small>` 요소를 위한 그들만의 font-size 를 가지고 있습니다.
+당신은 `<small>` 대신 인라인 요소에 .small 을 사용할 수 있습니다.
+![gridsystem](img/font_007.png)
+~~~
+<small>이 텍스트는 작게 보이도록 되어 있습니다.</small>
+~~~
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 참조
+#### [5.3.7.](#TOC) <a id="5.3.7.">두껍게</a>
+폰트 두께를 두껍게 하여 텍스트를 강조합니다.
+![gridsystem](img/font_008.png)
+~~~
+<strong>두꺼운 텍스트로 렌더링 됩니다</strong>
+~~~
