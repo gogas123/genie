@@ -8,7 +8,7 @@
    ~~~ 
     - MIT 허가서 내용
 
-    -MIT 규정 (MIT)
+    - MIT 규정 (MIT)
 
     Copyright (c) 2011-2016 Twitter, Inc.
 
