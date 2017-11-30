@@ -8,7 +8,7 @@
    ~~~ 
     - MIT 허가서 내용
 
-    - MIT 규정 (MIT)
+    -MIT 규정 (MIT)
 
     Copyright (c) 2011-2016 Twitter, Inc.
 
@@ -42,14 +42,14 @@
     
     소프트웨어.
     
-    - 요약
+    -요약
     
      - 이 소프트웨어를 누구라도 무상으로 제한없이 취급해도 좋다. 단, 
      저작권 표시 및 이 허가 표시를 소프트웨어의 모든 복제물 또는 중요한 부분에 기재해야 한다.
     
      - 저자 또는 저작권자는 소프트웨어에 관해서 아무런 책임을 지지 않는다.
         
-     - 자세한 내용 참조 :  https://github.com/twbs/bootstrap/blob/master/LICENSE
+    - 자세한 내용 참조 :  https://github.com/twbs/bootstrap/blob/master/LICENSE
 
     
     bootstrap은 기초 기능들 초기 모델 등은 MIT에서 제작 되었으며 저작권은 twitter에 있다. 오픈소스라고 하나 
