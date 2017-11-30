@@ -49,7 +49,7 @@
     
      - 저자 또는 저작권자는 소프트웨어에 관해서 아무런 책임을 지지 않는다.
         
-    - 자세한 내용 참조 :  https://github.com/twbs/bootstrap/blob/master/LICENSE
+    - 자세한 내용 참조 : https://github.com/twbs/bootstrap/blob/master/LICENSE
 
     
     bootstrap은 기초 기능들 초기 모델 등은 MIT에서 제작 되었으며 저작권은 twitter에 있다. 오픈소스라고 하나 
