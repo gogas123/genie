@@ -160,8 +160,10 @@ larger div</div>
 ~~~
  <div class="container jumbotron">
   <div class="row"> 
-    <div class="col-sm-9 col-md-push-3">.col-sm-9 .col-md-push-3</div> 
-    <div class="col-sm-3 col-md-pull-9">.col-sm-3 .col-md-pull-9</div> 
+    <div class="col-sm-9 col-md-push-3">.col-sm-9 .col-md-push-3</div>
+    <div class="col-sm-3 col-md-pull-9">.col-sm-3 .col-md-pull-9</div>
   </div> 
  </div>
 ~~~
+##### 위의 소스를 보면 sm 화면 이상에서의 9칼럼 크기 칼럼을 md 이상 화면에서는 push-3을 하고 있고, sm 화면 이상에서 3 칼럼 크기의 카럼을 md 이상 화면에서 pull-9를 설정하였다. pull 클래스는 왼쪽으로 칼럼을 당긴다고 생각하면 되고, push는 칼럼을 오른쪽으로 미는 기능이라고 생각하면 된다. 이에 대하여 실제로 col-sm-9가 앞에 있지만, 중간 화면에서는 아래와 같이 col-sm-3 칼럼이 앞에 있는 것을 확인할 수 있다.
+![gridsystem](img/grid_system_004.png)
