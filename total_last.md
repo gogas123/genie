@@ -149,7 +149,7 @@
 </br>
 </br>
 
-   ![Alt text](img/main1.JPG)
+   ![c9](img/main1.JPG)
 
 </br>
 </br>
@@ -159,7 +159,7 @@
 </br>
 </br>
 
-   ![Alt text](img/SING_UP.JPG)
+   ![c9](img/SING_UP.JPG)
 
 </br></br>
 
@@ -172,20 +172,20 @@
 </br>
 </br>
 
-   ![Alt text](img/make1.JPG)
+   ![c9](img/make1.JPG)
 </br></br>
 </br>
 -  ↓ C9 Workspace 구축 장면(공개 권한 및 사용할 랭귀지 등을 설정 할 수 있다.)
 </br></br></br>
-   ![Alt text](img/make2.JPG)
+   ![c9](img/make2.JPG)
 </br></br></br>
 -  ↓ C9 Workspace 구축 장면(Create workspace를 누르면 가상 서버가 구축 중인 상태)</br></br></br>
 
-   ![Alt text](img/make3.JPG)
+   ![c9](img/make3.JPG)
 </br></br></br>
 -  ↓ C9 Workspace 구축 완료(구축 후 간단한 HTML언어를 사용하여 소스입력)</br></br></br>
 
-   ![Alt text](img/make4.JPG)
+   ![c9](img/make4.JPG)
 </br></br></br>
 
    3. C9 협업 방법</br></br></br>
@@ -197,14 +197,14 @@
 -  ↓ C9 Workspace 협업하기(기본 탭에서 Shared With Me를 클릭)
 </br></br></br>
 
-   ![Alt text](img/share1.JPG)
+   ![c9](img/share1.JPG)
 
 </br></br></br>
 -  ↓ C9 Workspace 협업하기(아래와 같이 소스를 입력하면 실시간으로 코드 라인 숫자 옆에 색상으로 누가 코드를 작성했는지 알 수 있게 되어있으며 마우스를 대고 있으면 해당 작성자의 이름이 나온다.)
 </br>
 </br>
 
-   ![Alt text](img/share2.JPG)
+   ![c9](img/share2.JPG)
 </br></br></br>
    4. bootstrap
 
@@ -213,17 +213,17 @@
     -  ↓ C9 Workspace bootstrap 적용하기(몹시 간단하다 설치된 파일들을 드래그 해서 해당 기본 탭에 넣어주면 된다.)
 </br></br></br>
 
-   ![Alt text](img/bootstrap1.JPG)
+   ![c9](img/bootstrap1.JPG)
 </br></br></br>
     -  ↓ C9 Workspace bootstrap 적용하기(동료들과 소스를 만든 후 지금의 상태를 확인하고 싶다면 위에 RUN이라고 적힌 버튼을 클릭하면 서버가 구동된다. 그리고 콘솔 창이 아래와 같이 변한다.)
 </br></br>
-   ![Alt text](img/server_run.JPG)
+   ![c9](img/server_run.JPG)
     </br></br></br></br>
     -  ↑ C9 Workspace bootstrap 적용하기(위 와같이 변하면 링크가 하나 생기는데 이것이 가상 호스팅인데 저 것을 클릭하면 현재 상태를 확인 할 수있다. 또한 저 콘솔 창에 여러가지 명령어로 Back-end 부분 명령을 내릴 수 도 있다.)
 </br></br></br>
     -  ↓ C9 Workspace bootstrap 적용하기( 아래는 CSS,HTML등 소스를 입력 후 Run을 돌렸을때의 모습이다.)
 </br></br></br>
-   ![Alt text](img/bootstrap_last.JPG)
+   ![c9](img/bootstrap_last.JPG)
     </br></br></br>
 -  ↑ 위의 사진은 직접 제작한 사이트 이기 때문에 문제가 없습니다.
 </br></br></br>
