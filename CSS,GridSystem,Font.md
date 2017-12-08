@@ -1,10 +1,7 @@
-﻿
-  # 2015008 김진모
+﻿  # 2015008 김진모
 </br>
-</br>
-  
-
-* <a id="TOC"></a>**목차**
+<a id="TOC"></a>**목차** 
+---
   * [1.](#1.) CSS
     * [1.1.](#1.1.) CSS 기본설정
     * [1.2.](#1.2.) 모바일 우선기능
@@ -13,16 +10,38 @@
     * [2.1.](#2.1.) LESS
   * [3.](#3.) Bootstrap 프레임워크 CSS 기능
   * [4.](#4.) 그리드 시스템
-  * [4.1.](#4.1.) Bootstrap의 그리드 시스템의 작동 방식
-  * [4.2.](#4.2.) 그리드 시스템 응용
-  * [4.2.1.](#4.2.1.)그리드 시스템 응용(- visble-*)
-  * [4.2.2.](#4.2.2.)그리드 시스템 응용(- clearfix)
-  * [4.2.3.](#4.2.3.)그리드 시스템 응용(- offset)
-  * [4.2.3.](#4.2.4.)그리드 시스템 응용(pull, push)
-</br>
-</br>
-</br>
-</br>
+    * [4.1.](#4.1.) Bootstrap의 그리드 시스템의 작동 방식
+    * [4.2.](#4.2.) 그리드 시스템 응용
+       * [4.2.1.](#4.2.1.)그리드 시스템 응용(- visble-*)
+       * [4.2.2.](#4.2.2.)그리드 시스템 응용(- clearfix)
+       * [4.2.3.](#4.2.3.)그리드 시스템 응용(- offset)
+       * [4.2.4.](#4.2.4.)그리드 시스템 응용(pull, push)
+  * [5.](#5.) Font
+    * [5.1.](#5.1.) 부트스트랩의 Font-size기본값
+    * [5.2.](#5.2.) Less 로 만들어진
+    * [5.3.](#5.3.) 인라인 텍스트 요소
+      * [5.3.1.](#5.3.1.) 표시된 텍스트
+      * [5.3.2.](#5.3.2.) 삭제된 텍스트
+      * [5.3.3.](#5.3.3.) Less 로 만들어진
+      * [5.3.4.](#5.3.4.) 삽입된 텍스트
+      * [5.3.5.](#5.3.5.) 밑줄친 텍스트
+      * [5.3.6.](#5.3.6.) 작은 텍스트
+      * [5.3.7.](#5.3.7.) 두껍게
+      * [5.3.8.](#5.3.8.) 이탤릭
+    * [5.4.](#5.4.) 정렬 클래스
+    * [5.5.](#5.5.) 변형 클래스
+    * [5.6.](#5.6.) 변형 클래스
+      * [5.6.1.](#5.6.1.) 기본 약어
+      * [5.6.2.](#5.6.2.) 기본 약어
+    * [5.7.](#5.7.) 주소
+    * [5.8.](#5.8.) 인용구
+    * [5.9.](#5.9.) 기본 인용구
+      * [5.9.1.](#5.9.1.) 순서없는
+      * [5.9.2.](#5.9.2.) 순서있는
+      * [5.9.3.](#5.9.3.) 스타일 없는
+      * [5.9.4.](#5.9.4.) 인라인
+      * [5.9.5.](#5.9.5.) 설명
+      * [5.9.6.](#5.9.6.) 수평 설명
 </br>
 ---
 
@@ -172,34 +191,214 @@ larger div</div>
 ##### 위의 소스를 보면 sm 화면 이상에서의 9칼럼 크기 칼럼을 md 이상 화면에서는 push-3을 하고 있고, sm 화면 이상에서 3 칼럼 크기의 카럼을 md 이상 화면에서 pull-9를 설정하였다. pull 클래스는 왼쪽으로 칼럼을 당긴다고 생각하면 되고, push는 칼럼을 오른쪽으로 미는 기능이라고 생각하면 된다. 이에 대하여 실제로 col-sm-9가 앞에 있지만, 중간 화면에서는 아래와 같이 col-sm-3 칼럼이 앞에 있는 것을 확인할 수 있다.
 ![gridsystem](img/grid_system_004.png)
 
+### [5.](#TOC)<a id="5.">Font</a>
+##### 모든 HTML 제목인, `<h1>` 부터 `<h6>` 까지 사용가능합니다. 당신의 텍스트를 인라인으로 표시되면서 스타일만 제목 스타일로 맞추기 위해 `.h1` 부터 `.h6` 클래스 또한 사용 가능합니다.
 
+![gridsystem](img/font_000.png)
 
+~~~
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
+~~~
+![gridsystem](img/font_001.png)
+~~~
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+~~~
+### [5.1.](#TOC) <a id="5.1.">부트스트랩의 Font-size기본값</a>
+##### 부트스트랩의 font-size 기본값은 14px 이고, line-height 는 1.428 입니다. 이것은 <body> 와 모든 단락에 적용됩니다. 추가로, `<p>` (단락) 은 행높이의 절반의 하단 마진을 가집니다.(기본값에 의하면 10px 로 계산됩니다).
 
+### [5.2.](#TOC) <a id="5.2.">Less 로 만들어진</a>
+##### 문자크기는 variables.less 에서의 두 LESS 변수(@font-size-base 와 @line-height-base) 에 기반됩니다. 첫번째 변수는 기본 폰트 크기이고 두번째 변수는 기본 행 높이입니다. 타이포그래피에서 마진, 패딩, 행 높이를 구하기 위해 두 변수와 몇 개의 간단한 수학을 사용합니다.
 
+### [5.3.](#TOC) <a id="5.3.">인라인 텍스트 요소</a>
+#### [5.3.1.](#TOC) <a id="5.3.1.">표시된 텍스트</a>
+###### 또다른 맥락에서 관련있는 텍스트들을 찾아내어 강조하기 위해, `<mark>` 태그를 사용하세요. 
+![gridsystem](img/font_002.png)
+~~~
+당신은 <mark>강조할</mark> 텍스트에 mark 태그를 사용할 수 있습니다.
+~~~
+#### [5.3.2.](#TOC) <a id="5.3.2.">삭제된 텍스트</a>
+###### 텍스트 블록이 삭제 되었음을 나타내기 위해서는 `<del>` 태그를 사용하세요
+![gridsystem](img/font_003.png)
+~~~
+<del>이 텍스트줄은 삭제된 텍스트로 다뤄짐을 의미합니다.</del>
+~~~
+#### [5.3.3.](#TOC) <a id="5.3.3.">취소선 텍스트</a>
+###### 텍스트 블록이 더 이상상 연관이 없음을 나타내기 위해서 `<s>` 태그를 사용하세요.
+![gridsystem](img/font_004.png)
+~~~
+<s>이 텍스트줄은 더 이상 정확하지 않다고 다뤄짐을 의미합니다.</s>
+~~~
+#### [5.3.4.](#TOC) <a id="5.3.4.">삽입된 텍스트</a>
+###### 문서에 추가됨을 나타내기 위해서 `<ins>` 태그를 사용하세요.
+![gridsystem](img/font_005.png)
+~~~
+<ins>이 텍스트줄은 문서에 추가분으로 다뤄짐을 의미합니다.</ins>
+~~~
+#### [5.3.5.](#TOC) <a id="5.3.5.">밑줄친 텍스트</a>
+###### 텍스트에 밑출을 치려면 `<u>` 태그를 사용하세요.
+![gridsystem](img/font_006.png)
+~~~
+<u>이 텍스트줄은 밑줄이 그어질것입니다</u>
+~~~
+#### [5.3.6.](#TOC) <a id="5.3.6.">작은 텍스트</a>
+###### 텍스트 인라인이나 블록을 덜 강조하기 위해, 부모 태그보다 85% 의 크기로 보여지게 하는 `<small>` 태그를 사용하세요. 제목 요소는 내포된 `<small>` 요소를 위한 그들만의 font-size 를 가지고 있습니다.
+당신은 `<small>` 대신 인라인 요소에 .small 을 사용할 수 있습니다.
+![gridsystem](img/font_007.png)
+~~~
+<small>이 텍스트는 작게 보이도록 되어 있습니다.</small>
+~~~
 
+#### [5.3.7.](#TOC) <a id="5.3.7.">두껍게</a>
+###### 폰트 두께를 두껍게 하여 텍스트를 강조합니다.
+![gridsystem](img/font_008.png)
+~~~
+<strong>두꺼운 텍스트로 렌더링 됩니다</strong>
+~~~
+#### [5.3.8.](#TOC) <a id="5.3.8.">이탤릭</a>
+###### 이탤릭으로 텍스트를 강조합니다.(폰트를 기울립니다.)
+![gridsystem](img/font_009.png)
+~~~
+<em>이탤릭체로 렌더링 됩니다</em>
+~~~
+### [5.4.](#TOC) <a id="5.4.">정렬 클래스</a>
+###### 정렬 클래스로 콤포넌트의 텍스트를 손쉽게 재정렬하세요.
+![gridsystem](img/font_010.png)
+~~~
+<p class="text-left">좌측정렬된 텍스트.</p>
+<p class="text-center">중앙정렬된 텍스트.</p>
+<p class="text-right">우측정렬된 텍스트.</p>
+<p class="text-justify">양쪽정렬된 텍스트.</p>
+<p class="text-nowrap">그냥 텍스트.</p>
+~~~
+### [5.5.](#TOC) <a id="5.5.">변형 클래스</a>
+###### 콤포넌트의 텍스트를 대소문자 클래스로 변형시킵니다. (한글은 해당사항이 없습니다)
+![gridsystem](img/font_011.png)
+~~~
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">Capitalized text.</p>
+~~~
+### [5.6.](#TOC) <a id="5.6.">변형 클래스</a>
+###### `<abbr>` 는 약어나 두문자어를 마우스를 올렸을 때 원래 텍스트를 보여주기 위한 요소입니다. `title` 속성이 있는 약어는 점으로된 밑줄을 가지고 있고 마우스를 올렸을때 물음표 커서가 보여지며, 원래 텍스트를 보여줍니다.
 
+#### [5.6.1.](#TOC) <a id="5.6.1.">기본 약어</a>
+![gridsystem](img/font_012.png)
+~~~
+<abbr title="attribute">attr</abbr>
+~~~
+#### [5.6.2.](#TOC) <a id="5.6.2.">두문자어</a>
+###### 미세하게 작은(90%) 폰트크기를 가지려면 .initialism 을 추가하세요.
+![gridsystem](img/font_013.png)
+~~~
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+~~~
 
+### [5.7.](#TOC) <a id="5.7.">주소</a>
+###### 주소나 이메일 등의 연락처를 보여줍니다. `<br>` 로 개행합니다.
+![gridsystem](img/font_014.png)
+~~~
+<address>
+  <strong>Twitter, Inc.</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
 
+<address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+~~~
 
+### [5.8.](#TOC) <a id="5.8.">인용구</a>
+##### 당신의 문서안에 다른 출처로부터 인용한 콘텐츠 블록을 위해 사용합니다.
+#### [5.8.1.](#TOC) <a id="5.8.1.">기본 인용구</a>
+###### 주소나 이메일 등의 연락처를 보여줍니다. `<br>` 로 개행합니다.
+![gridsystem](img/font_015.png)
+~~~
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+~~~
+#### [5.8.2.](#TOC) <a id="5.8.2.">인용구 옵션</a>
+###### 기본 `<blockquote>` 를 기반으로 간단한 변형을 위해 스타일과 내용을 바꿉니다.
+###### 출처 표기
+###### 출처를 알수 있게 `<footer>` 태그를 추가하세요. 출처 원천의 이름은 `<cite>` 로 감싸주세요.
+![gridsystem](img/font_016.png)
+~~~
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+~~~
+#### [5.8.3.](#TOC) <a id="5.8.3.">다른 표시</a>
+###### 오른쪽 정렬된 인용구를 위해서 .blockquote-reverse 를 추가하세요.
+![gridsystem](img/font_017.png)
+~~~
+<blockquote class="blockquote-reverse">
+  ...
+</blockquote>
+~~~
 
+### [5.9.](#TOC) <a id="5.9.">목록</a>
+#### [5.9.1.](#TOC) <a id="5.9.1.">순서없는</a>
+###### 순서가 명확치 않은 항목들의 목록입니다
+![gridsystem](img/font_018.png)
+~~~
+<ul>
+  <li>...</li>
+</ul>
+~~~
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 참조
+#### [5.9.2.](#TOC) <a id="5.9.2.">순서있는</a>
+###### 순서가 명확한 항목들의 목록입니다.
+![gridsystem](img/font_019.png)
+~~~
+<ol>
+  <li>...</li>
+</ol>
+~~~
+#### [5.9.3.](#TOC) <a id="5.9.3.">스타일 없는</a>
+###### 항목에서 list-style 과 좌측 마진을 제거하세요. (직접 자식만 ) 이것은 오직 바로 아래 항목들에게만 적용됩니다. 그래서 당신은 중첩된 목록에도 따로 클래스를 추가하여야 합니다.
+![gridsystem](img/font_020.png)
+~~~
+<ul class="list-unstyled">
+  <li>...</li>
+</ul>
+~~~
+#### [5.9.4.](#TOC) <a id="5.9.4.">인라인</a>
+###### display: inline-block; 로 항목들을 한줄에 보여주고 약간의 패딩을 줍니다.
+![gridsystem](img/font_021.png)
+~~~
+<ul class="list-inline">
+  <li>...</li>
+</ul>
+~~~
+#### [5.9.5.](#TOC) <a id="5.9.5.">설명</a>
+###### 연관된 설명들의 목록입니다.
+![gridsystem](img/font_022.png)
+~~~
+<dl>
+  <dt>...</dt>
+  <dd>...</dd>
+</dl>
+~~~
+#### [5.9.6.](#TOC) <a id="5.9.6.">수평 설명</a>
+###### `<dl>` 내 용어들과 설명들을 나란히 놓습니다. 기본 `<dl>` 처럼 쌓이는 것부터 시작이지만, 네비게이션 바가 펼쳐지는 때와 같은 타이밍에 다음과 같이 됩니다.
+![gridsystem](img/font_023.png)
+~~~
+<dl class="dl-horizontal">
+  <dt>...</dt>
+  <dd>...</dd>
+</dl>
+~~~
