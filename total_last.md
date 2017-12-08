@@ -61,6 +61,8 @@
 
         - 기능 향상을 위한 제안
 
+        - 과제 참조글
+
         
     
 # Bootstrap 이란?
@@ -749,3 +751,27 @@ larger div</div>
 그리드 시스템을 활용하기 위해서는 바닥부터 만들어서 그리드를 적용 시켜 사용해야합니다. 그래서 주로 관리자 페이지에만 사용하는등 활용하고있는 범위가 좁은 수준입니다.
 부트스트랩 말고도 기술을 따라 파이어폭스에서 지원하고 파이어폭스에 최적화된 그리드 시스템도 존재합니다.
 장점도있지만 부트스트랩 하나를 위해서 웹을 새로만든다던가 그런경우는 적을거라 생각합니다.
+
+
+</br>
+</br>
+</br>
+
+
+# 과제 참조글
+
+-ajfoddl123@naver.com  << 손성호
+
+-qhdwnfm << 김진모
+
+-geniesoft <<김도현
+
+*그래프 상 qhdwnfm는 닉네임을 한글로 바꾸어 표기하여 기록이 이상하게 나왔습니다.
+
+![last](img/last_1.png)
+![last](img/last_2.png)
+![last](img/last_3.png)
+![last](img/last_4.png)
+![last](img/last_5.png)
+![last](img/last_6.png)
+![last](img/last_7.png)
